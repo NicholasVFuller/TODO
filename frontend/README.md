@@ -16,8 +16,8 @@ To get started with the frontend application, follow these steps:
 
 1. **Clone the repository**:
    ```
-   git clone <repository-url>
-   cd todo-list-app/frontend
+   git clone https://github.com/NicholasVFuller/TODO.git
+   cd TODO/frontend
    ```
 
 2. **Install dependencies**:

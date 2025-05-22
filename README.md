@@ -37,8 +37,8 @@ The project is organized into three main directories: `backend`, `frontend`, and
 
 1. **Clone the repository**
    ```
-   git clone <repository-url>
-   cd todo-list-app
+   git clone https://github.com/NicholasVFuller/TODO.git
+   cd TODO
    ```
 
 2. **Set up the database**
@@ -47,7 +47,7 @@ The project is organized into three main directories: `backend`, `frontend`, and
    - Run the SQL commands in `database/init.sql` to initialize the database.
 
 3. **Run the backend**
-   - Navigate to the `backend` directory.
+   - Navigate to the `backend/TodoApi` directory.
    - Restore the dependencies and run the application:
    ```
    dotnet restore

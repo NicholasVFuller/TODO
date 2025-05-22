@@ -1,12 +1,13 @@
-CREATE TABLE TodoItems (
-    Id SERIAL PRIMARY KEY,
-    Title VARCHAR(255) NOT NULL,
-    Description TEXT,
-    IsCompleted BOOLEAN NOT NULL DEFAULT FALSE,
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+DROP TABLE IF EXISTS todoitems;
+
+CREATE TABLE todoitems (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    iscomplete BOOLEAN NOT NULL DEFAULT FALSE,
+    completedat BIGINT,
+    ordernum INT NOT NULL DEFAULT 0
 );
 
-INSERT INTO TodoItems (Title, Description, IsCompleted) VALUES
-('Sample Todo 1', 'This is a sample todo item.', FALSE),
-('Sample Todo 2', 'This is another sample todo item.', TRUE);
+INSERT INTO todoitems (name, iscomplete, completedat, ordernum) VALUES
+('Sample Todo 1', FALSE, NULL, 0),
+('Sample Todo 2', TRUE, EXTRACT(EPOCH FROM NOW())::BIGINT, 1);

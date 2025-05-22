@@ -16,8 +16,8 @@ This is the backend part of the Todo List application, built using .NET Core Web
 
 1. **Clone the repository**:
    ```
-   git clone <repository-url>
-   cd todo-list-app/backend
+   git clone https://github.com/NicholasVFuller/TODO.git
+   cd TODO/backend
    ```
 
 2. **Set up the database**:
